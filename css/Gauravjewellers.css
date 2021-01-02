@@ -1,0 +1,368 @@
+/*Global Css*/
+body, ul, li{
+    font-family: 'Lato', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+a:hover {
+    color: #897777;
+}
+.btn{
+    background: inherit;
+    padding: 10px 20px;
+    border:1px solid #8a8889;
+    color:#8a8889;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover{
+    color: #fff;
+    border:1px solid #fff;
+}
+img{
+    width: 100%;
+}
+/*header Section*/
+header{
+    background-image: url(../Images/gauravjewellers/background.jpg);
+    padding: 10px;
+}
+.maindiv{
+    align-items: center;
+}
+.first {
+    width: 20%;
+}
+header .first ul{
+    justify-content: space-around;
+}
+.second {
+    width: 60%;
+    justify-content: center;
+}
+.second img{
+    width: 20%;
+}
+.third {
+    width: 20%;
+    justify-content: space-between;
+}
+.third p{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #8d7f7f;
+}
+/*menu section starts*/
+.menu{
+    background: #241616;
+    padding: 15px;
+}
+.menu .container .flex{
+    justify-content: space-between;
+}
+/*carousel section*/
+.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 5px 2px;
+    border: 1px solid #d6d6d6;
+    background: none;
+    transition: none;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: none;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    width: 8px;
+    height: 8px;
+    transition: none;
+}
+.owl-dots {
+    position: absolute;
+    left: 115px;
+    bottom: 30px;
+}
+#carousel{
+    position: relative;
+}
+.owl-theme .owl-nav {
+    margin-top: 0px;
+}
+#carousel .owl-prev img, #carousel .owl-next img, #carousel2 .owl-prev img, #carousel2 .owl-next img{
+    width: 200%;
+}
+#carousel .owl-prev, #carousel .owl-next, #carousel2 .owl-prev, #carousel2 .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    width:47px;
+    height: 30px;
+    opacity: 0.5;
+    overflow: hidden;
+}
+#carousel .owl-prev:hover, #carousel .owl-next:hover, #carousel2 .owl-prev:hover, #carousel2 .owl-next:hover{
+    opacity: 1;
+} 
+#carousel .owl-carousel .owl-nav .owl-prev{
+    left: 25px;
+}
+#carousel2 .owl-carousel .owl-nav .owl-prev{
+    left: -40px;
+}
+#carousel .owl-carousel .owl-nav .owl-next{
+    right: 10px;
+}
+#carousel2 .owl-carousel .owl-nav .owl-next{
+    right: -60px;
+}
+#carousel .owl-carousel .owl-nav .owl-next, #carousel2 .owl-carousel .owl-nav .owl-next{
+    transform: rotate(180deg);
+}
+#carousel .item .text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    color: #fff;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none;
+    color:none;
+}
+.owl-theme .owl-nav [class*=owl-]:focus{
+    outline: none;
+}
+h2{
+    font-family: 'Oranienbaum', serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+h2 span{
+    font-size: 72px;
+    display: block;
+}
+.item .text p {
+    font-style: italic;
+    line-height: 22px;
+    font-size: 16px;
+    margin: 0 0 30px 0;
+}
+/*statement Section*/
+.statement{
+    background: url("../Images/gauravjewellers/statementbg.jpg") repeat;
+    padding: 25px 0px;
+}
+.sttmtimg{
+    width: 60%;
+}
+.sttmttxt{
+    text-align: center;
+    width: 40%;
+    padding-top: 40px;
+}
+.sttmttxt h2{
+    color: #7a828a;
+    font-size: 40px;
+    line-height: 52px;
+}
+.sttmttxt h2 span{
+    color:#fff;
+    font-size: 64px;
+}
+.sttmttxt img {
+    width: 66%;
+}
+.sttmttxt p {
+    color: #d6d6d6;
+    width: 70%;
+    margin: 0 auto 30px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.sttmttxt .btn{
+    font-size: 12px;
+    padding: 15px 45px;
+    margin-bottom: 20px;
+}
+/*collection section*/
+section.collection {
+    background: #000;
+    color: #fff;
+    padding: 20px 0px 0px;
+    text-align: center;
+}
+.cdiv1fc, .cdiv1sc, .cdiv1tc{
+    width:33.33%;
+    margin: 0;
+    overflow: hidden;
+    height:auto;
+}
+.cdiv1fc, .cdiv1tc{
+    flex-direction: column;
+    position: relative;
+}
+.cdiv1fc::before, .cdiv1tc::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+.sets, .bangles, .bracelets, .pendants{
+    position: relative;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+    height: auto;
+}
+.cdiv1sc{
+    position: relative;
+}
+.sets:hover img, .bangles:hover img, .bracelets:hover img, .pendants:hover img, .cdiv1sc:hover img{
+    width: 100%;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.divinsets, .divinbracelets, .divincdiv1sc, .divinpendants, .divinbangles {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    text-align: left;
+    line-height: normal;
+}
+.divinsets h2, .divinbracelets h2, .divincdiv1sc h2, .divinpendants h2, .divinbangles h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+/*Our collection section*/
+.gjcollection{
+    background: url("../Images/gauravjewellers/gjcollection.jpg");
+    text-align: center;
+    padding: 30px 0px;
+}
+.gjcollection h2{
+    margin-bottom: 20px;
+}
+.gjp{
+    color: #5f575c;
+}
+.gjdiv {
+    width: 20%;
+    margin: 20px auto;
+}
+/*gjcarousel*/
+#gjcarousel .item img:nth-child(2) {
+    width: 75%;
+    margin: 30px auto 10px;
+}
+#gjcarousel .item a{
+    text-transform: none;
+    color: #897777;
+    font-family: 'Oranienbaum', serif;
+    font-size: 18px;
+}
+#gjcarousel .item a:hover{
+    background: url("../Images/gauravjewellers/ahover.png");
+}
+/*subscribe Section*/
+.subscribe{
+    background: url("../Images/gauravjewellers/stay.jpg");
+    padding: 30px 0px;
+}
+.container.subdiv {
+    text-align: center;
+}
+.subdiv h2{
+    margin-bottom: 10px;
+}
+.subdiv p{
+    color: #8e8e8e;
+    margin-bottom: 20px;
+}
+.subdiv2{
+    justify-content: center;
+}
+.subdiv2 input{
+    width: 25%;
+    padding: 10px 20px;
+}
+.subdiv2 input:focus{
+    outline: none;
+}
+.subdiv2 .btn{
+    color: #fff;
+    background: #888888;
+}
+.subdiv2 .btn:hover{
+    border: none;
+}
+/*footer Section*/
+footer{
+    padding: 30px 0px;
+    background: #fff;
+}
+.fdiv.flex {
+    justify-content: space-between;
+    width: 70%;
+}
+.fdiv li{
+    margin-bottom: 6px;
+}
+.fdiv li:nth-child(1){
+    margin-bottom: 10px;
+}
+.fdiv a{
+    color:#8f8f8f;
+    font-size: 14px;
+    text-transform: none;
+}
+ul.fdiv1c, .fdiv2c, .fdiv3c {
+    width: 20%;
+}
+ul.fdiv4c{
+    width: 40%;
+}
+.fdiv4c .contact{
+    font-size: 35px;
+    color: #bdbdbd;
+}
+.fdiv4c i{
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: rgb(103 9 9 / 59%);
+}
+.fdiv4c li span{
+    float: right;
+    width: 90%;
+}
+.fdiv4c li {
+    margin-bottom: 30px;
+    overflow: auto;
+}

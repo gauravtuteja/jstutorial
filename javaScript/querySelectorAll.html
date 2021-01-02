@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv">
+                <p>Hello World 
+                    <span class="myspan test">
+                        Great
+                    </span> 
+                    <em class="test">
+                        Bold
+                    </em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 class="text">
+                <span>
+                    Client Testimonials
+                </span>
+                / Video Testimonials
+            </h1>
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            //access element by query selector
+            // it will access all the element of mentioned selector & returns a node list.
+            var result = document.querySelectorAll("p");
+            console.log(result);
+            //length property
+            var len = result.length;
+            console.log(len);
+            // you can access multiple elements througth querySelectorAll
+            var data = document.querySelectorAll("p, h1, div");
+            console.log(data);
+            //loop
+            for(let i =0; i <len ; i++){
+                var result = document.querySelectorAll("p")[i];
+                console.log(result);
+            }
+        </script>
+    </body>
+</html>

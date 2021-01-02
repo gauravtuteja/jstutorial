@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 id="text">
+                Client Testimonials
+            </h1>
+        </section>
+        <section id="new">
+            <!--Video Testimonials-->
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            //insertAdjacentElement method
+            //node.insertAdjacentElement("position", new Element);
+            //positions are beforebegin, afterbegin, beforeend, afterend//
+            
+            //using beforebegin position 
+            var parent = document.getElementById("mypara");
+            var heading = document.getElementById("text");
+            var newelement1 = document.createElement("h4");
+            newelement1.textContent = "This is 1st new Element";
+            heading.insertAdjacentElement("beforebegin", newelement1);
+            console.log(parent); 
+
+            //using afterbegin position
+            var newelement2 = document.createElement("span");
+            newelement2.textContent = "This is 2nd New Element";
+            heading.insertAdjacentElement("afterbegin", newelement2);
+
+            //using beforeend position
+            var newelement3 = document.createElement("span");
+            newelement3.textContent = "This is 3rd New Element";
+            heading.insertAdjacentElement("beforeend", newelement3);
+
+            //using afterend position
+            var newelement4 = document.createElement("p");
+            newelement4.textContent = "This is 4th new Element";
+            heading.insertAdjacentElement("afterend", newelement4);
+        </script>
+    </body>
+</html>

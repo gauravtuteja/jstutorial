@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 class="text">Client Testimonials<!--Video Testimonials--></h1>
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+           // Attributes Properties = Name & Value
+           var data = document.getElementById("mydiv");
+           var result = data.attributes;// it will return an attribute node list...
+           console.log(result);
+           
+           var attr = data.attributes[0].name;
+           var attr1 = data.attributes[0].value;
+           console.log(attr);
+           console.log(attr1);
+           //length
+           var len = data.attributes.length;
+           console.log(len);
+           //loop
+           for(let i =0; i <len; i++){
+               var attr = data.attributes[i]; 
+               console.log(attr.name);
+               console.log(attr.value);
+           }   
+        </script>
+    </body>
+</html>

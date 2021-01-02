@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div class="logo">
+                <p>Hello World 
+                    <span id="myspan">
+                        Great
+                    </span> 
+                    <em>
+                        Bold
+                    </em>
+                </p>
+            </div>
+        </section>
+        <p> HTML</p>
+        <p> CSS</p>
+        <section id="test">
+            <h1 class="text">
+                <span>
+                    Client Testimonials
+                </span>
+                / Video Testimonials
+            </h1>
+            <p> Java Script</p>
+            <p>JQuery</p>
+        </section>
+        <script>
+            //accessing element by getElementByTagname
+            var result = document.getElementsByTagName("p");
+            var len = result.length;
+            console.log(len);
+            //loop
+            for(let i =0; i < len; i++){
+                var result = document.getElementsByTagName("p")[i];
+                console.log(result);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p id="texting"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <p>VIDEOS</p>
+            <h1 id="text">
+                Client Testimonials
+            </h1>
+        </section>
+        <section id="new">
+            <!--Video Testimonials-->
+            <p id="replace"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            //replaceChild Method
+            //syntax= parentNode.replaceChild(newChild, oldChild)
+            var parent = document.getElementById("mypara");
+            var oldchild = document.getElementById("text");
+            //create a new element
+            var newelement = document.createElement("h2");
+            newelement.textContent = "This is new H2";
+            
+            // Replacing the newelement with the oldchild
+            parent.replaceChild(newelement, oldchild)
+            console.log(parent);
+
+            //replacing an existing element with another...
+            var existing = document.getElementById("replace");
+            var replaced = document.getElementById("texting");
+            existing.parentNode.replaceChild(replaced, existing);
+            console.log(replaced.parentNode);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <p>VIDEOS</p>
+            <h1 id="text">
+                Client Testimonials
+            </h1>
+        </section>
+        <section id="new">
+            <!--Video Testimonials-->
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            var targetnode = document.getElementById("mypara");
+            var duplicate = targetnode.cloneNode(true);
+            //the value true will result in cloning all the items present in the target node..
+            console.log(duplicate)
+            //we have to append the cloned node....
+            var parent = document.getElementById("new");
+            parent.appendChild(duplicate);
+            console.log(parent);
+            //the value false will result in cloning only the targeted element, not it's children....
+            var parent2 = document.getElementById("mypara");
+            var anothernode = document.getElementById("mydiv");
+            var anotherduplicate = anothernode.cloneNode(false);
+            parent2.appendChild(anotherduplicate); 
+            console.log(parent2);
+        </script>
+    </body>
+</html>

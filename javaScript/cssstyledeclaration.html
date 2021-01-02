@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p id="replace" style="background-color: aqua; color: blue; font-size: 40px;">Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p id="texting"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <p>VIDEOS</p>
+            <h1 id="text">Client Testimonials</h1>
+        </section>
+        <section id="new">
+            <!--Video Testimonials-->
+            <p> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            //css style declaration 
+            var p = document.getElementById("replace");
+            var css = p.style;
+
+            //it only works in inline style..... it cannot access the style property written in internal or external style sheet...
+
+            //....................cssText Property........................
+            //cssText property returns the inline style of the element..
+            console.log(css.cssText);
+
+            //you can also set the style using cssText;
+            css.cssText = "background-color: red; color: white";
+
+            //csstext replaces the inline style with the new set style...
+
+            //..................length property................
+            //length property returns the number of style mentioned in the element..
+            console.log(css.length);
+            //...............item property....................
+            console.log(css.item(0)); //console.log(css[0])
+            
+            //.....................getPropertyValue...............
+            //getPropertyValue gives the value of the mentioned css.
+            var value = css.getPropertyValue("background-color");
+            console.log(value); 
+
+            //.....................removeproperty................
+            //removeProperty removes the mentioned property from the element..
+            css.removeProperty("color");
+            console.log(p);
+
+            //....................setProperty..................
+            //element.setProperty("propertyname","propertyvalue","priority")
+            css.setProperty("color","white", "important");
+        
+            //..........................getpropertypriority..............
+            //if you wanna know the priority of a property, you can check by this...
+            var priority = css.getPropertyPriority("color");
+            console.log(priority);
+            </script>
+    </body>
+</html>

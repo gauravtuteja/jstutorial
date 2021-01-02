@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 id="text">
+                Client Testimonials
+            </h1>
+        </section>
+        <section id="new">
+            <!--Video Testimonials-->
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            //insertAdjacenttext method
+            //targetElement.insertAdjacentText("position", new Element);
+            //positions are beforebegin, afterbegin, beforeend, afterend//
+            
+            //using beforebegin position 
+            var parent = document.getElementById("mypara");
+            var heading = document.getElementById("text");
+            var text = "My Text";
+            heading.insertAdjacentText("beforebegin", text);
+            console.log(parent); 
+
+            //using afterbegin position
+            heading.insertAdjacentText("afterbegin", text);
+
+            //using beforeend position
+            heading.insertAdjacentText("beforeend", text);
+
+            //using afterend position
+            heading.insertAdjacentText("afterend", text);
+
+            //it copies the same node at the positions you wanted.
+            
+            //normalise method
+            heading.normalize();
+            console.log(heading);
+        </script>
+    </body>
+</html>

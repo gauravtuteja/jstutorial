@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span id="replace" class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p id="texting"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <p>VIDEOS</p>
+            <h1 id="text">Client Testimonials</h1>
+        </section>
+        <section id="new">
+            <!--Video Testimonials-->
+            <p> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            // classList property
+            var data = document.getElementById("replace");
+            var classes = data.classList;
+            console.log(classes);
+
+            //you can access the classes one by one by index number like :
+            console.log(classes[0]);
+            console.log(classes[1]);
+
+            //or you can also access the classes one by one by item method like:
+            console.log(classes.item(0));
+            console.log(classes.item(1));
+
+            //how to add a class in an element...
+            classes.add("text");
+            console.log(classes);
+
+            //how to remove a class....
+            classes.remove("test");
+            console.log(classes);
+
+            //how to replace a class with other or new class...
+            classes.replace('text', 'gaurav');
+            console.log(classes);
+
+            //if you wanna check that the element contains a specified class...
+            var result = classes.contains("text");
+            var result1 = classes.contains("gaurav");
+            //if the element contains the mentioned class then it will show "true" as a result otherwise "false"...
+            console.log(result);
+            console.log(result1);
+
+            //toggle method = If the mentioned class is already in the element then toggle will remove that class
+            // and if the mentioned class is not in the element then toggle will add that class.
+            classes.toggle("gaurav");
+            //as the "gaurav" class was present in the element the toggle method removes it.
+            console.log(classes);
+            //as the first toggle removes the class, the second toggle adds it again...
+            classes.toggle("gaurav");
+            console.log(classes);
+            
+        </script>
+    </body>
+</html>

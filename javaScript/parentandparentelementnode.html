@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+        <title>CSIPL</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+        </style>
+
+</head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 class="text">Client Testimonials<!--Video Testimonials--></h1>
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+           //parentNode & parentElementNode
+           var result = document.getElementById("mydiv");
+           //parentNode will give you the parent of the the element
+           console.log(result.parentNode);
+           //parentElement will give you the parent of the element only if the parent is an element node.
+           console.log(result.parentElement);
+        </script>
+    </body>
+</html>

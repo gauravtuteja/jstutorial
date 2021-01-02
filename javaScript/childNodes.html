@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 class="text">
+                Client Testimonials
+            </h1>
+            <!--Video Testimonials-->
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+           //childNodes
+           var result = document.getElementById("mypara");
+           //childNodes property will return all the childs including text & comment node.
+           console.log(result.childNodes);
+           var len = result.childNodes.length;
+           console.log(len);
+           //loop
+           for(let i =0; i <len; i++){
+               console.log(result.childNodes[i]);
+           }
+        </script>
+    </body>
+</html>

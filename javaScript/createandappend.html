@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 id="text">
+                Client Testimonials
+            </h1>
+            <!--Video Testimonials-->
+            <p class="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <section id="new">
+
+        </section>
+        <script>
+            //create a new document fragment...
+            var df = document.createDocumentFragment();
+
+            //create an new Element...
+            var nelement = document.createElement("div");
+
+            //create a new text node....
+            var ntnode = document.createTextNode("Text by JavaScript");
+            //appending text in the new element created by JS above...
+            nelement.appendChild(ntnode);
+
+            //create a comment node.....
+            var ncomment = document.createComment("This is JS comment");
+
+            //Appending new element & new comment to the document fragment...
+            df.appendChild(nelement);
+            df.appendChild(ncomment);
+
+            //appending document fragment to the active document....
+            var trgt = document.getElementById("new");
+            trgt.appendChild(df);
+
+            // how to append an existing element...
+            var text = document.getElementById("text");
+            trgt.appendChild(text); 
+            console.log(trgt); 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div class="logo">
+                <p>Hello World 
+                    <span id="myspan">
+                        Great
+                    </span> 
+                    <em>
+                        Bold
+                    </em>
+                </p>
+            </div>
+        </section>
+        <section id="test">
+            <h1 class="text">
+                <span>
+                    Client Testimonials
+                </span>
+                / Video Testimonials
+            </h1>
+        </section>
+        <script>
+            //accessing element inside any Id
+            var result = document.getElementById("test").getElementsByTagName("span");
+            var len = result.length;
+            console.log(len);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span id="myspan"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p class="test text"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <h1 id="text">
+                Client Testimonials
+            </h1>
+            <!--Video Testimonials-->
+            <p id="test"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <section id="new">
+            <span id="mycss"> I am </span>
+        </section>
+        <script>
+            // Insert Before method
+            //create an new Element...
+            var nelement = document.createElement("div");
+
+            //create a new text node....
+            var ntnode = document.createTextNode("Text by JavaScript");
+            //appending text in the new element created by JS above...
+            nelement.appendChild(ntnode);
+
+            //inserting new Element in mypara div before test id
+            var parent = document.getElementById("mypara");
+            var refnode = document.getElementById("test");
+            parent.insertBefore(nelement, refnode);
+            console.log(parent); 
+
+            // moving existing node to another
+            var data = document.getElementById("mydiv").firstElementChild;
+            var movenode = document.getElementById("mycss");
+            var movebefore = document.getElementById("myspan");
+            console.log(movenode);
+            data.insertBefore(movenode, movebefore);
+
+        </script>
+    </body>
+</html>

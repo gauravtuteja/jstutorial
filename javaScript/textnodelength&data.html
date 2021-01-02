@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSIPL</title>
+    </head>
+    <body>
+        <!--header section starts-->
+        <section>
+            <div id="mydiv" class="text">
+                <p>Hello World 
+                    <span class="myspan test"> Great </span> 
+                    <em class="test"> Bold</em>
+                </p>
+                <p id="texting"> HTML</p>
+            </div>
+        </section>
+        <p> CSS</p>
+        <section id="mypara">
+            <p>VIDEOS</p>
+            <h1 id="text">Client Testimonials</h1>
+        </section>
+        <section id="new">
+            <!--Video Testimonials-->
+            <p id="replace"> Java Script</p>
+            <p class="text">JQuery</p>
+        </section>
+        <script>
+            //textNode length property
+            var h = document.getElementById("text");
+            var len = h.firstChild.length;
+            console.log(len);
+
+            //textNode data property
+            //textNode.data = "value"
+            var data = h.firstChild.data;
+            console.log(data);
+
+            //setting new data
+            h.firstChild.data = "This is New Data";
+
+            //append data in text node
+            h.firstChild.appendData(" from JavaScript");
+
+            //delete data from text node
+            h.firstChild.deleteData(0, 8);
+
+            //insert data in text node
+            h.firstChild.insertData(0, "Insert ");
+
+            //replacedata in text node
+            h.firstChild.replaceData(0, 6, "Inserting");
+
+            //split text Property
+            h.firstChild.splitText(9);
+            console.log(h.childNodes);
+
+            //substring Data property
+            var sub = h.firstChild.substringData(0, 6);
+            console.log(sub);
+        </script>
+    </body>
+</html>
