@@ -20,6 +20,8 @@ $('.slider').owlCarousel({
 var title = document.title = "Gaurav Jewellers";
 var df = document.createDocumentFragment("");
 
+
+
 //.......................header section starts.............................
 var header = document.createElement("header");
 header.id = "hdr";
