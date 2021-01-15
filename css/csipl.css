@@ -128,7 +128,7 @@ a, a:hover{
 .company, #testimonial, .services, .work, .choose, .blog, .details, .talk{
     padding: 40px 0px;
 }
-.company .heading{
+.company .cmpny{
     position: relative;
 }
 .company .heading span{
@@ -137,10 +137,10 @@ a, a:hover{
 }
 .company .udr_ln {
     position: absolute;
-    width: 46%;
-    left: 17%;
+    width: 55%;
+    left: 10%;
     background: #ee1c25;
-    margin: 5px;
+    margin: 5px 0px;
 }
 .company .heading1{
     margin: 40px 0px;
